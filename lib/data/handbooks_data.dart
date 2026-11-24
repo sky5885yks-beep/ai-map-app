@@ -1,5 +1,5 @@
 /// AI Handbook 地图数据：站点快照 2026-11-23，自动生成
-part of '../data_repository.dart';
+part of 'data_repository.dart';
 
 final handbookBands = <Band>[
   Band(id: 'official', no: '01', title: '官方 / 机构出品', desc: '出版社、云厂商、框架团队写的第一手实践，权威性最高。', official: true),

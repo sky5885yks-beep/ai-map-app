@@ -1,5 +1,5 @@
 /// 创作者地图数据：站点快照 2026-11-23，自动生成
-part of '../data_repository.dart';
+part of 'data_repository.dart';
 
 final creatorCategories = <Category>[
   Category(id: 'tutorial', no: '01', title: '教程科普', desc: '系统课、逐段精读与概念科普，适合打基础。'),

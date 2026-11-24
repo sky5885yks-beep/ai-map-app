@@ -7,7 +7,7 @@ pluginManagement {
 }
 
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FOLLOW_PROJECTS_SETTINGS)
+    // 不指定 repositoriesMode，兼容新旧 Gradle（新版已移除 FOLLOW_PROJECTS_SETTINGS）
     repositories {
         google()
         mavenCentral()

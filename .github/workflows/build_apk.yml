@@ -38,13 +38,10 @@ jobs:
           # 用本项目的代码覆盖模板代码
           rm -rf lib && cp -r ../lib ./lib
           cp ../pubspec.yaml ./pubspec.yaml
-          # 覆盖 Android 自定义配置
-          cp ../android/settings.gradle ./android/settings.gradle
-          cp ../android/build.gradle ./android/build.gradle
-          cp ../android/gradle.properties ./android/gradle.properties
-          cp ../android/key.properties.example ./android/key.properties.example
-          cp ../android/app/build.gradle ./android/app/build.gradle
-          cp -r ../android/app/src ./android/app/
+          # 全部 Android 构建配置用脚手架默认版本（已验证兼容最新版 Flutter/Gradle），
+          # 只把我们的应用图标和 Manifest 覆盖进去（保留包可见性声明）
+          cp ../android/app/src/main/AndroidManifest.xml ./android/app/src/main/AndroidManifest.xml
+          cp -r ../android/app/src/main/res/. ./android/app/src/main/res/
           # 拉取依赖
           flutter pub get
 

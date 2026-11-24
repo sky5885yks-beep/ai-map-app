@@ -1,0 +1,6 @@
+# 复制本文件为 key.properties 并填入你的签名信息（不要提交到 git）
+# storeFile 用正斜杠或双反斜杠，例如：/Users/you/key.jks 或 C:\\keys\\ai-map.jks
+storeFile=../app/ai-map.jks
+storePassword=你的keystore密码
+keyAlias=ai-map
+keyPassword=你的key密码

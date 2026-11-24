@@ -1,0 +1,22 @@
+name: ai_map_app
+description: 中文 AI 创作者地图 + AI Handbook 导航地图，离线可看的安卓 App。
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # 打开外部浏览器（点卡片跳 GitHub / 博客 / B站等）
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  # 无外部图片/字体资源：全部用内置图标与文字头像，保持单文件依赖最少

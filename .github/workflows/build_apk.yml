@@ -41,6 +41,8 @@ jobs:
           # 全部 Android 构建配置用脚手架默认版本（已验证兼容最新版 Flutter/Gradle），
           # 只把我们的应用图标和 Manifest 覆盖进去（保留包可见性声明）
           cp ../android/app/src/main/AndroidManifest.xml ./android/app/src/main/AndroidManifest.xml
+          # 先删掉脚手架自带的 png 图标，避免与我们的 xml 图标重复资源报错
+          rm -rf ./android/app/src/main/res/mipmap-*
           cp -r ../android/app/src/main/res/. ./android/app/src/main/res/
           # 拉取依赖
           flutter pub get
